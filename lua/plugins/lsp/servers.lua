@@ -15,6 +15,7 @@ return {
             require("mason-lspconfig").setup(opts)
 
             require("plugins.lsp.types.lua_ls")
+            require("plugins.lsp.types.python")
         end,
     },
 
@@ -29,6 +30,8 @@ return {
                 "lua_ls",
                 "stylua",
                 -- Python
+                "ruff",
+                "pyright",
             },
             integrations = {
                 ["mason-lspconfig"] = true,
