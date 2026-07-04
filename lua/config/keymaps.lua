@@ -22,6 +22,17 @@ vim.keymap.set(
     { desc = "UI/Toggle/Diagnostics window" }
 )
 
+-- Windows
+vim.keymap.set("n", "<leader>wh", "<C-w>h")
+vim.keymap.set("n", "<leader>wj", "<C-w>j")
+vim.keymap.set("n", "<leader>wk", "<C-w>k")
+vim.keymap.set("n", "<leader>wl", "<C-w>l")
+
+vim.keymap.set("n", "<leader>wsh", "<cmd>split<cr>", { desc = "Window/Split/Horizontal" })
+vim.keymap.set("n", "<leader>wsv", "<cmd>vsplit<cr>", { desc = "Window/Split/Vertical" })
+
+vim.keymap.set("n", "<leader>wd", "<cmd>close<cr>", { desc = "Window/Close" })
+
 -- Code Actions
 vim.keymap.set("i", "<Tab>", "<C-y>", { desc = "Actions/Autocomplite" })
 
