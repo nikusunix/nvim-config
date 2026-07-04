@@ -34,7 +34,6 @@ return {
             ensure_installed = {
                 -- Lua
                 "stylua",
-                "luacheck",
             },
         },
     },
@@ -43,8 +42,7 @@ return {
         config = function()
             local plugin = require("lint")
 
-            plugin.linters_by_ft = {
-            }
+            plugin.linters_by_ft = {}
 
             vim.api.nvim_create_autocmd({ "BufReadPost", "BufWritePost", "InsertLeave" }, {
                 callback = function()
