@@ -2,12 +2,12 @@ return {
     {
         "nvim-mini/mini.icons",
         version = "*",
-        opts = { style = "ascii" },
+        opts = { style = "glyph" },
     },
     {
         "nvim-mini/mini.tabline",
         version = "*",
-        opts = { show_icons = false, format = nil, tabpage_section = "left" },
+        opts = { show_icons = true },
     },
     {
         "nvim-mini/mini.files",
